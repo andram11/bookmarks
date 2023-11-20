@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="icon" type="image-png" href="/logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!--Open modal-->
+   <h1 id="show-modal">Add bookmark</h1>
+   <!--Bookmarks-->
+   <div class="container" id="bookmarks-container">
+ 
+    </div>
+   </div>
+   <!--Modal content-->
+   <div class="modal-container" id="modal">
+    <div class="modal">
+        <i class="fas fa-times close-icon" id="close-modal"></i>
+        <div class="modal-header">
+            <h3>Add bookmark</h3>
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!--Website name-->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                     <!--Website URL-->
+                     <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" class="form-input" id="website-url">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+               </div>
+        </div>
+    </div>
+   </div>
+   
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
